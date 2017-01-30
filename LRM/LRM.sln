@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LRM.Tests", "LRM.Tests\LRM.Tests.csproj", "{1B38C769-AF42-4367-96D9-0FA4A8775163}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LRM.Server", "LRM.Server\LRM.Server.csproj", "{76A04A99-E0BD-4EBD-80D4-E553F02DFAE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LRM.Client", "LRM.Client\LRM.Client.csproj", "{69707504-290E-4301-A37D-ADB9AE238F84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B38C769-AF42-4367-96D9-0FA4A8775163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B38C769-AF42-4367-96D9-0FA4A8775163}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B38C769-AF42-4367-96D9-0FA4A8775163}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B38C769-AF42-4367-96D9-0FA4A8775163}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76A04A99-E0BD-4EBD-80D4-E553F02DFAE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76A04A99-E0BD-4EBD-80D4-E553F02DFAE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76A04A99-E0BD-4EBD-80D4-E553F02DFAE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76A04A99-E0BD-4EBD-80D4-E553F02DFAE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69707504-290E-4301-A37D-ADB9AE238F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69707504-290E-4301-A37D-ADB9AE238F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69707504-290E-4301-A37D-ADB9AE238F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69707504-290E-4301-A37D-ADB9AE238F84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

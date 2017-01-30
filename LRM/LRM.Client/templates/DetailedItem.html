@@ -1,0 +1,31 @@
+        <!--Main content section-->
+        <div ng-controller="GetController" class="col-lg-offset-2 col-lg-8">
+            <h1>Search Results</h1>
+            <div class="well">
+                The data in the search bar is first validated and then sent to the API; 
+                which uses the contents as a seach parameter on the data.
+                To reduce calls to the database (for when multiple users can use app) and still allow the app to search every column for a match, 
+                the decision was made to return all the data and store it in the cache.
+                This means that for a majority of searches, the database is not queried and no data is sent to the database reducing the chance for SQL Injection attacks.
+                The other option was to pass the search param to the database and use a stored procedure to look into each column.
+            </div>
+
+            <!--Main quick table for angular to populate-->
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr ng-repeat="resource in resource|limitTo:1">
+                        <th ng-repeat="(k,d) in resource">{{k}}</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="resource in resource|filter:searchRes">
+                        <td ng-repeat="d in resource">{{d}}</td>
+                        <td>
+                            <a ng-click="go('#SingleItem', {{d.Id}})">view</a>
+                            <a ng-click="goUpdateView">edit</a>
+                        </td> 
+                    </tr>
+                </tbody>
+            </table>
+        </div>

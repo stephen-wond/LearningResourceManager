@@ -1,0 +1,31 @@
+        <!--Main content section-->
+        <div ng-controller="GetSingleController" class="col-lg-offset-2 col-lg-8">
+            <h1>Detailed Resource</h1>
+            <div class="well">
+                This page is displayed when the user selects the view button, it will only display a single resource.
+                It displays the data in a form view, making the details clearer to the user.
+                By design, the only place the user can delete a resource is here; reducing the chances of mistakenly deleting a resource.
+            </div>
+
+            <div class="col-lg-offset-1">
+                <form class="form-horizontal">
+                    <fieldset>
+                        <legend>Resource Details</legend>
+                        <div ng-repeat="(k,d) in resource" class="form-group">
+                            <label for="{{k}}" class="col-lg-2 control-label">{{k}}:</label>
+                            <div class="col-lg-8">
+                                <output name="{{k}}">{{d}}</output>
+                            </div>
+                        </div>
+                        </br>
+                        <div class="form-group">
+                            <div class="col-lg-10 col-lg-offset-2">
+                                <button type="button" class="btn btn-primary">Update</button><!--goes to UpdateItem for this recource-->
+                                <button type="button" class="btn btn-danger">Delete</button> <!--deletes item, goes to quickItem page to display all resources-->
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <!--WILL HAVE THE DETAILS OF THE RESOURCE AS WELL AS SIMILAR RESUORCES -- SHOW LIST AND FILTER BY KEYWORDS-->

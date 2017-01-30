@@ -1,0 +1,50 @@
+        <!--Main content section-->
+        <div class="col-lg-offset-2 col-lg-8">
+            <h1>Add Resource</h1>
+            <div class="well">
+                Here we are using a HTTP POST to add a new resource to the database.
+                The inputted data could pose a security risk, so it will need to be validated and also it should not be allowed to reach the database in its raw form.
+                After the resource has been added the cache will need to be updated to reflect the change, 
+                this will need to be done each time the database is edited to ensure that the latest data is being displayed and is also avaliable for edit/delete 
+            </div>
+            
+            <!--'Add resource' form-->
+            <div class="col-lg-offset-1">
+                <form class="form-horizontal">
+                    <fieldset>
+                        <legend>Resource Details</legend>
+                        <div class="form-group">
+                            <label for="inputName" class="col-lg-2 control-label">Name</label>
+                            <div class="col-lg-8">
+                                <input type="text" class="form-control" id="inputName" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputLink" class="col-lg-2 control-label">Link</label>
+                            <div class="col-lg-8">
+                                <input type="url" class="form-control" id="inputLink" placeholder="Link">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputDescription" class="col-lg-2 control-label">Description</label>
+                            <div class="col-lg-8">
+                                <textarea class="form-control" rows="3" id="inputDescription" placeholder="Description"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputKeywords" class="col-lg-2 control-label">Keywords</label>
+                            <div class="col-lg-8">
+                                <textarea class="form-control" rows="1" id="inputKeyword" placeholder="Keywords"></textarea>
+                                <span class="help-block">Please enter relevent keywords that do NOT appear in the Name or Description.</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-10 col-lg-offset-2">
+                                <button type="reset" class="btn btn-default">Reset</button> <!--clears form-->
+                                <button type="submit" class="btn btn-primary">Submit</button> <!--go to singleItem page to display submitted-->
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
